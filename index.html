@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMA – Mental Health Support App</title>
+  
+</head>
+<body>
+
+<header>
+  <h1>LUMA</h1>
+  <p>Light through every low moment</p>
+</header>
+
+<section>
+  <h2>🌤 Mood Tracking</h2>
+  <p>How are you feeling today?</p>
+  <div class="mood-btns">
+    <button onclick="addMood(1)">😢</button>
+    <button onclick="addMood(2)">😐</button>
+    <button onclick="addMood(3)">🙂</button>
+    <button onclick="addMood(4)">😄</button>
+  </div>
+  <div class="chart" id="chart"></div>
+</section>
+
+<section>
+  <h2>🧘 Coping Strategies</h2>
+  <ul>
+    <li>Deep breathing – inhale 4s, exhale 6s</li>
+    <li>Mindfulness: focus on your surroundings</li>
+    <li>Write 3 things you are grateful for</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🎯 Goal Setting</h2>
+  <input id="goalInput" placeholder="Enter today’s goal" />
+  <button onclick="saveGoal()">Save Goal</button>
+  <p id="goalDisplay"></p>
+</section>
+
+<section>
+  <h2>📓 Private Journal</h2>
+  <textarea id="journal" rows="4" placeholder="Write your thoughts safely..."></textarea>
+  <button onclick="saveJournal()">Save Entry</button>
+  <p id="journalSaved"></p>
+</section>
+
+<section>
+  <h2>💊 Medication Reminder</h2>
+  <input id="med" placeholder="Medicine name" />
+  <button onclick="setReminder()">Set Reminder</button>
+  <p id="medMsg"></p>
+</section>
+
+<section>
+  <h2>🤝 Peer Support</h2>
+  <p>“You are not alone. Many others are walking this journey with you.”</p>
+</section>
+
+<section>
+  <h2>📞 Professional Support</h2>
+  <p>If you feel overwhelmed, please contact a mental health professional or local crisis helpline.</p>
+</section>
+
+<section>
+  <h2>📚 Educational Resources</h2>
+  <ul>
+    <li>What is Depression?</li>
+    <li>Common symptoms & causes</li>
+    <li>Evidence-based treatments</li>
+  </ul>
+</section>
+
+<footer>
+  <p>LUMA – Mental Health Support App | Open-source Educational Prototype</p>
+</footer>
+
+
+
+</body>
+</html>
